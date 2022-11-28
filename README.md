@@ -1,5 +1,5 @@
 # PIC32CXBZ2_WBZ45x_SMART_THERMOSTAT
-<img src="docs/IoT-Made-Easy-Logo.png" width=100>
+<img src="Docs/IoT-Made-Easy-Logo.png" width=100>
 
 
 > "IOT Made Easy!"
@@ -22,7 +22,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 "IoT Made Easy!" - Smart Thermostat solution using Zigbee 3.0 and Wi-Fi. The Smart Thermostat enables us to set the temperature using a Thermostat Panel, get the current temperature through Multisensor and switch on/off the air cinditioner based on the current and set temperature and publish the same data onto MQTT through a Zigbee Gateway. This application enables us to create a Smart Termostat.
 
-![Alt Text](docs/Smart_Thermostat_Working.gif)
+![Alt Text](Docs/Smart_Thermostat_Working.gif)
 
 
 ## Contents
