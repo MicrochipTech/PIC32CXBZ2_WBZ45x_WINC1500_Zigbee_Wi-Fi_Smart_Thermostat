@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production/WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED.X.production.elf">
+    <memory name="program">
+      <units>bytes</units>
+      <length>1032192</length>
+      <used>354178</used>
+      <free>678014</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>131072</length>
+      <used>103748</used>
+      <free>27324</free>
+    </memory>
+  </executable>
+</project>
