@@ -27,9 +27,9 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## Contents
 
-1. [Thermostat Gateway]()
+1. [Thermostat Gateway](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/tree/main/Thermostat_Zigbee_Gateway)
 
-2. [Thermostat Panel]()
+2. [Thermostat Panel](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/tree/main/Thermostat_Zigbee_Panel)
 
 3. [Thermostat Sensor](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_ZIGBEE_MULTISENSOR_TEMPHUM13_CLICK)
 

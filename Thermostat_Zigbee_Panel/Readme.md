@@ -1,5 +1,5 @@
 # PIC32CXBZ2_WBZ45x_ZIGBEE_PANEL
-<img src="docs/IoT-Made-Easy-Logo.png" width=100>
+<img src="Docs/IoT-Made-Easy-Logo.png" width=100>
 
 
 > "IOT Made Easy!" 
@@ -32,14 +32,14 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 This example demonstrates the use of the OLED C CLICK and an external touch interface (ATtiny3217 Xplained Pro and T10 Xplained Pro kit) with the WBZ451 Curiosity board to create a Zigbee Panel application for Smart Thermostat. The touch interface enables us to switch on/off the display, reset the device to factory new and set the temperature. The set temperature will be reported to the Zigbee Coordinator. The current temperature reported from the coordinator and the set temperature is shown on the OLED display.
 
-![Alt Text](docs/Touch_working.gif)
+![Alt Text](Docs/Touch_working.gif)
 
 - Button1: To switch ON/OFF the display 
 - Button3: To increase the set temperature
 - Button4: To decrease the set temperature
 - To reset the device to factory new press Button 1, 3 and 4 simultaneously.
 
-| Tip | Go through the [overview](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-2/index.html?GUID-668A6CB2-F1FB-438D-9E1E-D67AC3C1C132) for understanding few key Zigbee 3.0 protocol concepts |
+| Tip | Go through the [overview](https://onlineDocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-2/index.html?GUID-668A6CB2-F1FB-438D-9E1E-D67AC3C1C132) for understanding few key Zigbee 3.0 protocol concepts |
 | :- | :- |
 
 ## 2. Bill of materials<a name="step2">
@@ -79,7 +79,7 @@ This example demonstrates the use of the OLED C CLICK and an external touch inte
 | Note: Make sure the grounds are common!! |
 | --- |
 
-![Hardware setup](docs/Hardware_setup.png)
+![Hardware setup](Docs/Hardware_setup.png)
 
 ## 4. Software Setup<a name="step4">
 
@@ -106,7 +106,7 @@ This example demonstrates the use of the OLED C CLICK and an external touch inte
 
 ## 5. Harmony MCC Configuration<a name="step5">
 
-| Tip | New users of MPLAB Code Configurator are recommended to go through the [overview](https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-AFAB9227-B10C-4FAE-9785-98474664B50A) |
+| Tip | New users of MPLAB Code Configurator are recommended to go through the [overview](https://onlineDocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-AFAB9227-B10C-4FAE-9785-98474664B50A) |
 | :- | :- |
 
 **Step 1** - Connect the WBZ451 CURIOSITY BOARD to the device/system using a micro-USB cable.
@@ -116,7 +116,7 @@ This example demonstrates the use of the OLED C CLICK and an external touch inte
 | Note | The Zigbee CI with OLED application repository can be cloned/downloaded from this [link](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_ZIGBEE_CI_OLED_Display). |
 | :- | :- |
 
-![](docs/1_project_graph.png)
+![](Docs/1_project_graph.png)
 
 - This aplication can also be created using Combined Interface but since we are using a battery operated device we use a Custom device. Select the Combined Interface component in the Project graph and click ❌ to remove it.
 
@@ -136,12 +136,12 @@ This example demonstrates the use of the OLED C CLICK and an external touch inte
 ![System DEVCFG1](Docs/System_configuration.PNG)
 
 - The PIN configuration is depicted as follows.\
-![PIN Configuration](docs/Pin_Configuration.PNG)
+![PIN Configuration](Docs/Pin_Configuration.PNG)
 
 - The project graph after making the changes is shown below.\
-![](docs/2_project_graph.png)
+![](Docs/2_project_graph.png)
 
-**Step 4** - [Generate](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.
+**Step 4** - [Generate](https://onlineDocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.
 
 - After the code gets generated a Merge window will appear. Click on the arrow and merge all the files.
 
@@ -196,5 +196,5 @@ Follow the steps provided in the link to [Build and program the application](htt
 
 
 
-![Alt Text](docs/Touch_working.gif)
+![Alt Text](Docs/Touch_working.gif)
 

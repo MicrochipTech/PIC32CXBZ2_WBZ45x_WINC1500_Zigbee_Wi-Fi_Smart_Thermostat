@@ -1,5 +1,5 @@
 # PIC32CXBZ2_WBZ45x_WINC1500_ZIGBEE_GATEWAY
-<img src="docs/IoT-Made-Easy-Logo.png" width=100>
+<img src="Docs/IoT-Made-Easy-Logo.png" width=100>
 
 
 > "IOT Made Easy!"
@@ -57,7 +57,7 @@ This example demonstrates the use of the ATWINC15x0 with the WBZ451 Curiosity bo
 |15/16|PA2|9|IRQN (In V2 board, connect to 16)|
 
 - WBZ451 Curiosity board can be connected to WINC1500 Xplained Pro using a [XPRO-ADAPTER  Click](https://www.mikroe.com/xpro-adapter-click) as shown below.\
-![Board](docs/Board.PNG)
+![Board](Docs/Board.PNG)
   - The jumper settings in XPRO-ADAPTER click board is as shown above figure. Use Jumpers and Jumper wires to connect the header as mentioned in below table.
 
 	|Jumper Connections|
@@ -109,28 +109,28 @@ Refer Project Manifest present in harmony-manifest-success.yml under the projec
 
 ## 5. Harmony MCC Configuration<a name="step5">
 
-| Tip | New users of MPLAB Code Configurator are recommended to go through the [overview](https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-B5D058F5-1D0B-4720-8649-ACE5C0EEE2C0) |
+| Tip | New users of MPLAB Code Configurator are recommended to go through the [overview](https://onlineDocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-B5D058F5-1D0B-4720-8649-ACE5C0EEE2C0) |
 | :- | :- |
 
 **Step 1** - Connect the WBZ451 CURIOSITY BOARD with Temp&Hum 13 click to the device/system using a micro-USB cable.\
 
-**Step 2** - Create a [new MCC Harmony project](https://github.com/MicrochipTech/EA71C53A/blob/master/H3/wireless_apps_pic32cxbz2_wbz45/apps/docs/creating_new_mplabx_harmony_project.md#creating-a-new-mcc-harmony-project).\
+**Step 2** - Create a [new MCC Harmony project](https://github.com/MicrochipTech/EA71C53A/blob/master/H3/wireless_apps_pic32cxbz2_wbz45/apps/Docs/creating_new_mplabx_harmony_project.md#creating-a-new-mcc-harmony-project).\
 
 **Step 3** - The "MCC - Harmony Project Graph" below depicts the harmony components utilized in this project.\
 
-![Harmony Project Graph](docs/Project_graph.PNG)
+![Harmony Project Graph](Docs/Project_graph.PNG)
 
 - From Device resources, go to Harmony->Wireless->Drivers and select WINC. Accept Dependencies or satisfiers, select "Yes". Right click on the "⬦" in WINC device and add SPI driver. And in the same way add SERCOM1 to the SPI driver as shown below.\
-![WINC](docs/Winc_connection.PNG)
+![WINC](Docs/Winc_connection.PNG)
 
 - The EIC configuration is depicted as follows.\
-![EIC](docs/EIC.PNG)
+![EIC](Docs/EIC.PNG)
 
 - The WINC configuration is depicted as follows.\
-![EIC](docs/WINC.PNG)
+![EIC](Docs/WINC.PNG)
 
 - The SPI driver configuration is depicted as follows.\
-![SPI DRIVER](docs/SPI_DRIVER.PNG)
+![SPI DRIVER](Docs/SPI_DRIVER.PNG)
 
 - The SERCOM1 SPI configuration is depicted as follows.\
 ![SERCOM1 SPI](Docs/Sercom1_configuration.PNG)
@@ -153,9 +153,9 @@ Refer Project Manifest present in harmony-manifest-success.yml under the projec
 ![System DEVCFG1](Docs/System_configuration.PNG)
 
 - The PIN configuration is depicted as follows.\
-![PIN Configuration](docs/Pin_Configuration.PNG)
+![PIN Configuration](Docs/Pin_Configuration.PNG)
 
-**Step 4** - [Generate](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.
+**Step 4** - [Generate](https://onlineDocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.
  
 **Step 5** - In "app_user_edits.c", make sure the below code line is commented 
 
@@ -206,10 +206,10 @@ case CMD_ZCL_REPORTING_TEMPERATURE_MEASUREMENT:
         }
 ```
 
-![Zigbee handler](docs/Zigbee_handler.PNG)
+![Zigbee handler](Docs/Zigbee_handler.PNG)
 
 **Step 10** - Right click on your project in the Projects section in MPLAB and select Properties. Select "xc32-gcc" and in Option categories select "Preprocessing and messages" and click on the settings option as shown below.\
-![Zigbee handler](docs/Macro_def.PNG)
+![Zigbee handler](Docs/Macro_def.PNG)
 
 - In "Enter the string here", add "WINC_MQTT" give "ok" and "apply".
 
@@ -267,16 +267,16 @@ int write(int handle, void * buffer, size_t count)
 - Follow the steps mentioned below to see the data published in the MQTT.
 
 		- Open MQTT explorer and give the host name as "broker.hivemq.com".\
-		![](docs/MQTT_1.png)
+		![](Docs/MQTT_1.png)
 		
 		- Select Advanced and add a new topic as "MCHP/WSG/THERMOSTAT_GATEWAY".\
-		![](docs/MQTT_2.png)
+		![](Docs/MQTT_2.png)
 		
 		- The data will be published onto MQTT as shown below.\
-		![](docs/MQTT_3.png)
+		![](Docs/MQTT_3.png)
 		
 - Press the switch Reset on the WBZ451 Curiosity Evaluation Kit to print the console logs.
-![Serial Console](docs/teraterm.png)
+![Serial Console](Docs/teraterm.png)
 
 <a href="#top">Back to top</a>
 
