@@ -24,6 +24,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ![Alt Text](Docs/Smart_Thermostat_Working.gif)
 
+The above video shows the working of the Smart thermostat application. The Smart Thermostat setup includes a Zigbee Gateway, Thermostat Panel and a Multisensor. The Gateway application is a Zigbee coordinator and establishes a centralized network. The Thermostat panel and Multisensor joins this centralized network. Once the network is formed the multisensor reports the temperature values to the devices in the network and the set temperature is reported by the Thermostat Panel. Based on the current and set temperature the air conditioner is switched on/off which is indicated by the RGB led in the Zigbee Gateway device.
 
 ## Contents
 

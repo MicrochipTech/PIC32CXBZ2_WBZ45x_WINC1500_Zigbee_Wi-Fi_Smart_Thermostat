@@ -293,7 +293,7 @@ Follow the steps provided in the link to [Build and program the application](htt
 		![](Docs/MQTT_3.png)
 		
 - Press the switch Reset on the WBZ451 Curiosity Evaluation Kit to print the console logs.
-![Serial Console](Docs/teraterm.png)
+![Serial Console](Docs/Teraterm.PNG)
 
 <a href="#top">Back to top</a>
 
