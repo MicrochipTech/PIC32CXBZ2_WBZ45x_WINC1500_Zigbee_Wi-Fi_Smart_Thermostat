@@ -7,6 +7,7 @@
 Devices: **| PIC32CXBZ2 | WBZ45x |**<br>
 Features: **| ZIGBEE | OLED | TOUCH |**
 
+[Back to Main page](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat)
 
 ## ⚠ Disclaimer
 
@@ -139,7 +140,7 @@ This example demonstrates the use of the OLED C CLICK and an external touch inte
 ![PIN Configuration](Docs/Pin_Configuration.PNG)
 
 - The project graph after making the changes is shown below.\
-![](Docs/2_project_graph.png)
+![](Docs/2_project_graph.PNG)
 
 **Step 4** - [Generate](https://onlineDocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.
 
@@ -151,16 +152,20 @@ This example demonstrates the use of the OLED C CLICK and an external touch inte
 
 **Step 8** - Replace the app.c, app_zigbee_handler.c and app.h file.
 
-- Copy the "app.c" and "app.h" files by navigating to the following path: "PIC32CXBZ2_WBZ45x_ZIGBEE_MULTISENSOR_TEMPHUM13_CLICK\Zigbee_Multisensor_temphum\firmware\src\"
+| Note | This application repository should be cloned/downloaded to perform the following steps. |
+| :- | :- |
+| Path | The application folder can be foung in the following [link](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/tree/main/Thermostat_Zigbee_Panel/WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware) |
+
+- Copy the "app.c" and "app.h" files by navigating to the following path: "WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware/src/"
 - Paste the files under source files in your project folder (...\firmware\src).
 - Copy the "app_zigbee_handler.c" and "app_timer.c" files by navigating to the following paths: 
-	- "PIC32CXBZ2_WBZ45x_ZIGBEE_MULTISENSOR_TEMPHUM13_CLICK\Zigbee_Multisensor_temphum\firmware\src\app_zigbee"
-	- "PIC32CXBZ2_WBZ45x_ZIGBEE_MULTISENSOR_TEMPHUM13_CLICK\Zigbee_Multisensor_temphum\firmware\src\app_timer"
+	- "WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware/src/app_zigbee"
+	- "WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware/src/app_timer"
 - Paste the files under the respecive folders in your project folder .
 
 **Step 9** - Clean and build the project. To run the project, select "Make and program device" button.
 
-**Step 10** - The OLED display & data printed onto the tera term.
+**Step 10** - The OLED display & data are printed onto the tera term.
 
 - Baud rate: 115200
 - Com port: COM USB serial port
@@ -170,22 +175,21 @@ This example demonstrates the use of the OLED C CLICK and an external touch inte
 
 - Follow the steps provided under [program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device)  section to program the ATtiny3217 Xplained Pro and T10 Xplained Pro interface.
 - The application folder can be found by navigating to the following path: 
-	- "PIC32CXBZ2_WBZ45x_ZIGBEE_MULTISENSOR_TEMPHUM13_CLICK\Zigbee_Multisensor_temphum"
-- The
+	- "PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/Thermostat_Zigbee_Panel/Hex/ATTiny3217_T10.hex"
 
 ## 6. Board Programming<a name="step6">
 
 ### Program the precompiled hex file using MPLAB X IPE
 
 The application hex file can be found by navigating to the following path: 
-- "PIC32CXBZ2_WBZ45x_ZIGBEE_MULTISENSOR_TEMPHUM13_CLICK\Zigbee_Temperature_humidity_Sensor.X.production.hex"
+- "PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/Thermostat_Zigbee_Panel/Hex/"
 
 Follow the steps provided in the link to [program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device) using MPLABX IPE to program the pre-compiled hex image. 
 
 ### Build and program the application using MPLAB X IDE
 
 The application folder can be found by navigating to the following path: 
-- "PIC32CXBZ2_WBZ45x_ZIGBEE_MULTISENSOR_TEMPHUM13_CLICK\Zigbee_Multisensor_temphum"
+- "PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/Thermostat_Zigbee_Panel/"
 
 Follow the steps provided in the link to [Build and program the application](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#build-and-program-the-application-guid-3d55fb8a-5995-439d-bcd6-deae7e8e78ad-section).
 
@@ -193,8 +197,6 @@ Follow the steps provided in the link to [Build and program the application](htt
 ## 7. Run the demo<a name="step7">
 
 - After programming the board, the expected application behavior is shown below. 
-
-
 
 ![Alt Text](Docs/Touch_working.gif)
 

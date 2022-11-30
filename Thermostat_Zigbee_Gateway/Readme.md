@@ -6,7 +6,7 @@
 Devices: **| PIC32CXBZ2 | WBZ45x |**<br>
 Features: **| ZIGBEE | Wi-Fi |**
 
-[Back to Main page](../README.md)
+[Back to Main page](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat)
 
 ## ⚠ Disclaimer
 
@@ -25,7 +25,8 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 1. [Hardware Setup](#step3)
 1. [Software Setup](#step4)
 1. [Harmony MCC Configuration](#step5)
-1. [Run the demo](#step6)
+1. [Board Programming](#step6)
+1. [Run the demo](#step7)
 
 ## 1. Introduction<a name="step1">
 
@@ -121,13 +122,13 @@ Refer Project Manifest present in harmony-manifest-success.yml under the projec
 ![Harmony Project Graph](Docs/Project_graph.PNG)
 
 - From Device resources, go to Harmony->Wireless->Drivers and select WINC. Accept Dependencies or satisfiers, select "Yes". Right click on the "⬦" in WINC device and add SPI driver. And in the same way add SERCOM1 to the SPI driver as shown below.\
-![WINC](Docs/Winc_connection.PNG)
+![WINC](Docs/Winc_connection.png)
 
 - The EIC configuration is depicted as follows.\
 ![EIC](Docs/EIC.PNG)
 
 - The WINC configuration is depicted as follows.\
-![EIC](Docs/WINC.PNG)
+![WINC](Docs/Winc.PNG)
 
 - The SPI driver configuration is depicted as follows.\
 ![SPI DRIVER](Docs/SPI_DRIVER.PNG)
@@ -165,13 +166,13 @@ Refer Project Manifest present in harmony-manifest-success.yml under the projec
 
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
-| Path | PIC32CXBZ2_WBZ45x_ZIGBEE_MULTISENSOR_TEMPHUM13_CLICK\Zigbee_Multisensor_temphum |
+| Path | The application folder can be foung in the following [link](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/tree/main/Thermostat_Zigbee_Gateway/WBZ451_WINC1500_THERMOSTAT_GATEWAY/firmware) |
 
-- Copy the "app_winc" folder, which can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_ZIGBEE_MULTISENSOR_TEMPHUM13_CLICK\Zigbee_Multisensor_temphum\firmware\src\"
+- Copy the "app_winc" folder, which can be found by navigating to the following [path](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/tree/main/Thermostat_Zigbee_Gateway/WBZ451_WINC1500_THERMOSTAT_GATEWAY/firmware).
 - Paste the folder under source files in your project folder (...\firmware\src).
-- Copy the "paho.mqtt.embedded-c" folder, which can be found by navigating to the following path: "WINC1500_TEST\firmware\src\third_party"
+- Copy the "paho.mqtt.embedded-c" folder, which can be found by navigating to the following path: "...\firmware\src\third_party"
 - Paste the folder under the given path in your project folder (...\firmware\src\third_party).
-- Copy the "wdrv_winc_debug.h" file, which can be found by navigating to the following path: "WINC1500_TEST\firmware\src\config\default\driver\winc\include\"
+- Copy the "wdrv_winc_debug.h" file, which can be found by navigating to the following path: "...\firmware\src\config\default\driver\winc\include\"
 - Paste the file under the given path in your project folder (...\firmware\src\config\default\driver\winc\include\).
 
 **Step 7** - Add the files in MPLAB X IDE to your project by following the steps mentioned below.
@@ -186,7 +187,7 @@ Refer Project Manifest present in harmony-manifest-success.yml under the projec
 
 - Copy the "app.c" and "app.h" files by navigating to the following path: "PIC32CXBZ2_WBZ45x_ZIGBEE_MULTISENSOR_TEMPHUM13_CLICK\Zigbee_Multisensor_temphum\firmware\src\"
 - Paste the files under source files in your project folder (...\firmware\src).
-- Copy the "app_timer.c" file by navigating to the following path: - "PIC32CXBZ2_WBZ45x_ZIGBEE_MULTISENSOR_TEMPHUM13_CLICK\Zigbee_Multisensor_temphum\firmware\src\app_timer"
+- Copy the "app_timer.c" file by navigating to the following path: - "...\firmware\src\app_timer"
 - Paste the files under source files in your project folder (...\firmware\src\app_timer).
 
 **Step 9** - In "app_zigbee_handler.c" file, replace the following code lines as shown below.
@@ -254,7 +255,23 @@ int write(int handle, void * buffer, size_t count)
 
 **Step 12** - Clean and build the project. To run the project, select "Make and program device" button.
 
-## 6. Run the demo<a name="step6">
+## 6. Board Programming<a name="step6">
+
+### Program the precompiled hex file using MPLAB X IPE
+
+The application hex file can be found by navigating to the following path: 
+- "PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/Thermostat_Zigbee_Gateway/Hex/"
+
+Follow the steps provided in the link to [program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device) using MPLABX IPE to program the pre-compiled hex image. 
+
+### Build and program the application using MPLAB X IDE
+
+The application folder can be found by navigating to the following path: 
+- "PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/Thermostat_Zigbee_Gateway/"
+
+Follow the steps provided in the link to [Build and program the application](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#build-and-program-the-application-guid-3d55fb8a-5995-439d-bcd6-deae7e8e78ad-section).
+
+## 7. Run the demo<a name="step6">
 
 - Make sure the WINC1500 firmware is v19.7.6 or higher. Please refer to the documentation in the [WBZ451 serial bridge project](../01_wbz45x_winc1500_serialBridge/README.md#step1) to update the WINC1500 firmware.
 - Open the Tera Term terminal application on your PC (from the Windows® Start menu by pressing the Start button)
