@@ -77,7 +77,7 @@ This example demonstrates the use of the OLED C CLICK and an external touch inte
 |5.0V IN|Power supply|5V|Power supply|
 |GND|Ground|GND|Ground|
 
-| Note: Make sure the grounds are common!! |
+| Note: Make sure to have common GND! |
 | --- |
 
 ![Hardware setup](Docs/Hardware_setup.png)
@@ -86,15 +86,16 @@ This example demonstrates the use of the OLED C CLICK and an external touch inte
 
 - [MPLAB X IDE ](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide#tabs)
 
-    - Version: 6.00
+    - Version: 6.05
 	- XC32 Compiler v4.10
-	- MPLAB® Code Configurator v5.1.17
+	- MPLAB® Code Configurator v5.2.0
 	- PIC32CX-BZ_DFP v1.0.107
 	- MCC Harmony
 	  - csp version: v3.14.1
 	  - core version: v3.11.1
 	  - CMSIS-FreeRTOS: v10.4.6
 	  - wireless_pic32cxbz_wbz: v1.1.0
+	  - wireless_system_pic32cxbz_wbz: v1.1.0
 	  - dev_packs: v3.14.0
 	  - gfx: v3.11.1
 	  - wolfssl version: v4.7.0

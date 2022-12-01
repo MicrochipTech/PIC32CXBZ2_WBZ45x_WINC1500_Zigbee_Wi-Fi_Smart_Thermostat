@@ -81,17 +81,21 @@ This example demonstrates the use of the ATWINC15x0 with the WBZ451 Curiosity bo
 
 This project has been verified to work with the following versions of software tools:
 
-- MPLAB X IDE v6.00
+- MPLAB X IDE v6.05 
 - XC32 Compiler v4.10
-- MPLAB® Code Configurator v5.1.17
+- MPLAB® Code Configurator v5.2.1
 - PIC32CX-BZ\_DFP v1.0.107
 - MCC Harmony
-  - csp version: v3.13.1
+  - csp version: v3.14.0
   - core version: v3.11.1
-  - wireless\_wifi version: v3.6.1
-  - dev\_packs version: v3.13.1
+  - wireless_pic32cxbz_wbz: v1.1.0
+  - dev_packs: v3.14.0
+  - wireless_system_pic32cxbz_wbz: v1.1.0
   - CMSIS-FreeRTOS version: v10.4.6
-  - wireless\_pic32cxbz_wbz: v1.0.0
+  - wireless_wifi: v3.7.0
+  - wireless_zigbee: v5.0.0
+  - crypto: v3.7.6
+  - wolfssl: v4.7.0
 
 Refer Project Manifest present in harmony-manifest-success.yml under the project folder *firmware\src\config\default\harmony-manifest-success.yml* for more details
 
