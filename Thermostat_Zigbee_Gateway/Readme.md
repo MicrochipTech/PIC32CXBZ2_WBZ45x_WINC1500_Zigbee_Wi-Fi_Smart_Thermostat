@@ -158,7 +158,7 @@ Refer Project Manifest present in harmony-manifest-success.yml under the projec
 ![System DEVCFG1](Docs/System_configuration.PNG)
 
 - The PIN configuration is depicted as follows. \
-![PIN Configuration](Docs/Pin_Configuration.PNG)
+![PIN Configuration](Docs/Pin_config.PNG)
 
 **Step 4** - [Generate](https://onlineDocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.
  
@@ -297,7 +297,7 @@ Follow the steps provided in the link to [Build and program the application](htt
 		![](Docs/MQTT_3.png)
 		
 - Press the switch Reset on the WBZ451 Curiosity Evaluation Kit to print the console logs.
-![Console](Docs/Teraterm.PNG)
+![Console](Docs/Console.PNG)
 
 <a href="#top">Back to top</a>
 
