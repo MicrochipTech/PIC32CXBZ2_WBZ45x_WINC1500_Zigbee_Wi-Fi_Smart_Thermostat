@@ -30,7 +30,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This example demonstrates the use of the ATWINC15x0 with the WBZ451 Curiosity board to create a Zigbee Thermostat Gateway application. A Zigbee gateway application is used to transfer data among devices in a Zigbee network. Here we use Winc1500 to publish the same data onto MQTT explorer so that a user can subscribe and access the data.
+This example application demonstrates the use of the ATWINC15x0 with the WBZ451 Curiosity board to create a Zigbee Thermostat Gateway application. A Zigbee gateway application is used to transfer data among devices in a Zigbee network. Here we use Winc1500 to publish the same data onto MQTT explorer so that a user can subscribe and access the data.
 
 ## 2. Bill of materials<a name="step2">
 
@@ -45,7 +45,7 @@ This example demonstrates the use of the ATWINC15x0 with the WBZ451 Curiosity bo
 - Connect the WBZ451 Curiosity Evaluation Kit to the Host PC as a USB Device through a Type-A male to micro-B USB cable connected to Micro-B USB (Debug USB) port
 - Connect WINC1500 Xplained Pro and WBZ451 Curiosity board as below
 
-|WBZ451 Click connector|WBZ451 Pin name/Number|WINC1500 Xplained Pro|WINC1500 Pin Name/Number|
+|WBZ451 Click Connector|WBZ451 Pin Name/Number|WINC1500 Xplained Pro|WINC1500 Pin Name/Number|
 | :- | :- | :- | :- |
 |1|PB1|10|CHIP EN|
 |2|PB2|5|RST|
@@ -57,7 +57,7 @@ This example demonstrates the use of the ATWINC15x0 with the WBZ451 Curiosity bo
 |8|GND|19|GND|
 |15/16|PA2|9|IRQN (In V2 board, connect to 16)|
 
-- WBZ451 Curiosity board can be connected to WINC1500 Xplained Pro using a [XPRO-ADAPTER  Click](https://www.mikroe.com/xpro-adapter-click) as shown below.\
+- WBZ451 Curiosity board can be connected to WINC1500 Xplained Pro using a [XPRO-ADAPTER  Click](https://www.mikroe.com/xpro-adapter-click) as depicted below.
 ![Board](Docs/Board.PNG)
   - The jumper settings in XPRO-ADAPTER click board is as shown above figure. Use Jumpers and Jumper wires to connect the header as mentioned in below table.
 
@@ -117,47 +117,47 @@ Refer Project Manifest present in harmony-manifest-success.yml under the projec
 | Tip | New users of MPLAB Code Configurator are recommended to go through the [overview](https://onlineDocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-B5D058F5-1D0B-4720-8649-ACE5C0EEE2C0) |
 | :- | :- |
 
-**Step 1** - Connect the WBZ451 CURIOSITY BOARD with Temp&Hum 13 click to the device/system using a micro-USB cable. \
+**Step 1** - Connect the WBZ451 CURIOSITY BOARD to the device/system using a micro-USB cable.
 
-**Step 2** - Create a new MCC Harmony project. \
+**Step 2** - Create a new MCC Harmony project.
 
-**Step 3** - The "MCC - Harmony Project Graph" below depicts the harmony components utilized in this project. \
+**Step 3** - The "MCC - Harmony Project Graph" below depicts the harmony components utilized in this project.
 
 ![Harmony Project Graph](Docs/Project_graph.PNG)
 
-- From Device resources, go to Harmony->Wireless->Drivers and select WINC. Accept Dependencies or satisfiers, select "Yes". Right click on the "⬦" in WINC device and add SPI driver. And in the same way add SERCOM1 to the SPI driver as shown below. \
+- From Device resources, go to Harmony->Wireless->Drivers and select WINC. Accept Dependencies or satisfiers, select "Yes". Right click on the "⬦" in WINC device and add SPI driver. And in the same way add SERCOM1 to the SPI driver as shown below.
 ![WINC](Docs/Winc_connection.png)
 
-- The EIC configuration is depicted as follows. \
+- The EIC configuration is depicted as follows.
 ![EIC](Docs/EIC.PNG)
 
-- The WINC configuration is depicted as follows. \
+- The WINC configuration is depicted as follows.
 ![WINC](Docs/Winc.PNG)
 
-- The SPI driver configuration is depicted as follows. \
+- The SPI driver configuration is depicted as follows.
 ![SPI DRIVER](Docs/SPI_DRIVER.PNG)
 
-- The SERCOM1 SPI configuration is depicted as follows. \
+- The SERCOM1 SPI configuration is depicted as follows.
 ![SERCOM1 SPI](Docs/Sercom1_configuration.PNG)
 
-- Right click on the "⬦" in Time system service and select TC3 as shown below. \
+- Right click on the "⬦" in Time system service and select TC3 as shown below.
 ![Timer](Docs/Timer.PNG)
 
-- From Device resources, go to wireless->drivers->zigbee->Device types and select THERMOSTAT. Accept Dependencies or satisfiers, select "Yes". Add UART components needed for console logs and commands. Right click on the "⬦" in Zigbee console and add the satisfier and in the same way add SERCOM0 to the USART console as shown below. \
+- From Device resources, go to wireless->drivers->zigbee->Device types and select THERMOSTAT. Accept Dependencies or satisfiers, select "Yes". Add UART components needed for console logs and commands. Right click on the "⬦" in Zigbee console and add the satisfier and in the same way add SERCOM0 to the USART console as shown below.
 ![Thermostat](Docs/Thermostat.PNG)
 
-- The SERCOM0 UART configuration is depicted as follows. \
+- The SERCOM0 UART configuration is depicted as follows.
 ![SERCOM0 USART](Docs/Sercom0_configuration.PNG)
 
-- Select Wolfcrypt library and make sure that "Support random number generation" box is unchecked as shown below. \
+- Select Wolfcrypt library and make sure that "Support random number generation" box is unchecked as shown below.
 ![Wolfcrypt library](Docs/Wolfcrypt_library.PNG)
 
-- From Device resources, go to Harmony->Wireless->System Services and select "APP_TIMER_SERVICE". \
+- From Device resources, go to Harmony->Wireless->System Services and select "APP_TIMER_SERVICE".
 
-- The SYSTEM configuration is depicted as follows. \
+- The SYSTEM configuration is depicted as follows.
 ![System DEVCFG1](Docs/System_configuration.PNG)
 
-- The PIN configuration is depicted as follows. \
+- From project graph, go to Plugins->PIN configuration and configure as follows.
 ![PIN Configuration](Docs/Pin_config.PNG)
 
 **Step 4** - [Generate](https://onlineDocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.
@@ -304,13 +304,13 @@ Follow the steps provided in the link to [Build and program the application](htt
 
 - Follow the steps mentioned below to see the data published in the MQTT.
 
-	- Open MQTT explorer and give the host name as "broker.hivemq.com". \
+	- Open MQTT explorer and give the host name as "broker.hivemq.com".
 	![](Docs/MQTT_1.png)
 		
-	- Select Advanced and add a new topic as "MCHP/WSG/THERMOSTAT_GATEWAY". \
+	- Select Advanced and add a new topic as "MCHP/WSG/THERMOSTAT_GATEWAY".
 	![](Docs/MQTT_2.png)
 		
-	- The data will be published onto MQTT as shown below. \
+	- The data will be published onto MQTT as shown below.
 	![](Docs/MQTT_3.png)
 		
 - Press the switch Reset on the WBZ451 Curiosity Evaluation Kit to print the console logs.

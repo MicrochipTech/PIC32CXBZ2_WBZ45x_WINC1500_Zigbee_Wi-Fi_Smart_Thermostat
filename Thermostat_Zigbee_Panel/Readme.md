@@ -31,7 +31,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This example demonstrates the use of the OLED C CLICK and an external touch interface (ATtiny3217 Xplained Pro and T10 Xplained Pro kit) with the WBZ451 Curiosity board to create a Zigbee Panel application for Smart Thermostat. The touch interface enables us to switch on/off the display, reset the device to factory new and set the temperature. The set temperature will be reported to the Zigbee Coordinator. The current temperature reported from the coordinator and the set temperature is shown on the OLED display.
+This example application demonstrates the use of the OLED C CLICK and an external touch interface (ATtiny3217 Xplained Pro and T10 Xplained Pro kit) with the WBZ451 Curiosity board to create a Zigbee Panel application for Smart Thermostat. The touch interface enables us to switch on/off the display, reset the device to factory new and set the temperature. The set temperature will be reported to the Zigbee Coordinator. The current temperature reported from the coordinator and the set temperature is shown on the OLED display.
 
 ![Alt Text](Docs/Touch_working.gif)
 
@@ -122,25 +122,25 @@ This example demonstrates the use of the OLED C CLICK and an external touch inte
 
 - This aplication can also be created using Combined Interface but since we are using a battery operated device we use a Custom device. Select the Combined Interface component in the Project graph and click ❌ to remove it.
 
-- From Device resources, go to wireless->drivers->zigbee->Device types and select CUSTOM device. Accept Dependencies or satisfiers, select "Yes". Add UART components needed for console logs and commands. Right click on the "⬦" in Zigbee console to add the satisfier and make the configurations as shown below.  \
+- From Device resources, go to wireless->drivers->zigbee->Device types and select CUSTOM device. Accept Dependencies or satisfiers, select "Yes". Add UART components needed for console logs and commands. Right click on the "⬦" in Zigbee console to add the satisfier and make the configurations as shown below. 
 ![CUSTOM](Docs/Custom.PNG)
 
 ![CUSTOM](Docs/Custom_config1.PNG)
 
 ![CUSTOM](Docs/Custom_config2.PNG)
 
-- From Device resources, go to System services and select console. Right click on the "⬦" on the instance0 and select SERCOM2 to create a UART communication with the touch interface and the configurations are shown below.\
+- From Device resources, go to System services and select console. Right click on the "⬦" on the instance0 and select SERCOM2 to create a UART communication with the touch interface and the configurations are shown below.
 ![SERCOM2](Docs/SERCOM2.PNG)
 
 - From Device resources, go to Wireless->System services and select "APP_TIMER_SERVICE".
 
-- The SYSTEM configuration is depicted as follows.\
+- The SYSTEM configuration is depicted as follows.
 ![System DEVCFG1](Docs/System_configuration.PNG)
 
-- The PIN configuration is depicted as follows.\
+- From project graph, go to Plugins->PIN configuration and configure as follows.
 ![PIN Configuration](Docs/Pin_Configuration.PNG)
 
-- The project graph after making the changes is shown below.\
+- The project graph after making the changes is shown below.
 ![](Docs/2_project_graph.PNG)
 
 **Step 4** - [Generate](https://onlineDocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.
@@ -155,13 +155,13 @@ This example demonstrates the use of the OLED C CLICK and an external touch inte
 
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
-| Path | The application folder can be foung in the following [link](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/tree/main/Thermostat_Zigbee_Panel/WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware) |
+| Path | The application folder can be foung in the following [link](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/tree/main/Thermostat_Zigbee_Panel/../firmware) |
 
-- Copy the "app.c" and "app.h" files by navigating to the following path: "WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware/src/"
+- Copy the "app.c" and "app.h" files by navigating to the following path: "../firmware/src/"
 - Paste the files under source files in your project folder (...\firmware\src).
 - Copy the "app_zigbee_handler.c" and "app_timer.c" files by navigating to the following paths: 
-	- "WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware/src/app_zigbee"
-	- "WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware/src/app_timer"
+	- "../firmware/src/app_zigbee"
+	- "../firmware/src/app_timer"
 - Paste the files under the respecive folders in your project folder .
 
 **Step 9** - Clean and build the project. To run the project, select "Make and program device" button.

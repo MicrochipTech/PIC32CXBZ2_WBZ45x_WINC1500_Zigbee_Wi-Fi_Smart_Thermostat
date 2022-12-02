@@ -18,7 +18,9 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## Introduction
 
-A Smart Thermostat is a device which can control the temperature and maintain a comfort environment by adjusting the heating or cooling system to a preferred set point. It consists of 3 modules: a thermostat gateway, thermostat panel and a thermostat sensor. A thermostat sensor is an end device which reports the current temperature to the devices in the ZigBee network it can also be made as an battery operated device. The thermostat panel is an end device which acts as the remote control to set the current temperature. It can also be a battery operated device and can be kept anywhere in the room i.e it is mobile device. A thermostat gateway is a Zigbee coordinator device which creates a centralized network, all the end devices joins to this centralized network and reports the current and the set temperature. This data is used for HVAC control and the same is published onto MQTT using WINC1500.
+A Smart Thermostat is a device which can control the temperature and maintain a comfort environment by adjusting the heating or cooling system to a preferred set point. It consists of 3 modules: a thermostat sensor, thermostat panel and a thermostat gateway. A thermostat sensor is an end device which reports the current temperature to the devices in the ZigBee network and it can also be made as an battery operated device. The thermostat panel is an end device which acts as the remote control to set the temperature. It can also be a battery operated device and can be kept anywhere in the room i.e it is a mobile device. A thermostat gateway is a Zigbee coordinator which creates a centralized network to which all the end devices join and report the current and the set temperature. This data is used for HVAC control and the same is published onto MQTT using WINC1500 in the ZigBee Gateway.
+
+![](Docs/Thermostat.PNG)
 
 ## Description
 
@@ -26,7 +28,7 @@ A Smart Thermostat is a device which can control the temperature and maintain a 
 
 ![Alt Text](Docs/Smart_Thermostat_Working.gif)
 
-The above video shows the working of the Smart thermostat application. The Smart Thermostat setup includes a Zigbee Gateway, Thermostat Panel and a Multisensor. The Gateway application is a Zigbee coordinator and establishes a centralized network. The Thermostat panel and Multisensor joins this centralized network. Once the network is formed the Multisensor reports the temperature values to the devices in the network and the set temperature is reported by the Thermostat Panel. When the current temperature is higher than the set temperature the air conditioner is switched ON and the RGB led in the Zigbee Gateway device is also switched ON and the vice versa.
+The above video shows the working of the Smart thermostat application. The Smart Thermostat setup includes a Zigbee Gateway, Thermostat Panel and a Multisensor. The Gateway application is a Zigbee coordinator and establishes a centralized network. The Thermostat panel and Multisensor joins this centralized network. Once the network is formed the Multisensor reports the temperature values to the devices in the network and the set temperature is reported by the Thermostat Panel. When the current temperature is higher than the set temperature the air conditioner is switched ON and simultaneously the RGB led in the Zigbee Gateway device is also switched ON and vice versa.
 
 ## Contents
 
