@@ -175,8 +175,10 @@ This example application demonstrates the use of the OLED C CLICK and an externa
 ### Programming the ATTINY3217 XPRO with the T10 interface
 
 - Follow the steps provided under [program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device)  section to program the ATtiny3217 Xplained Pro and T10 Xplained Pro interface.
-- The application folder can be found by navigating to the following path: 
+- The application hex file can be found by navigating to the following path: 
 	- "PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/Thermostat_Zigbee_Panel/Hex/ATTiny3217_T10.hex"
+- The application folder can be found by navigating to the following path:
+	- "PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/Thermostat_Zigbee_Panel/ATTiny3217_T10"
 
 ## 6. Board Programming<a name="step6">
 
