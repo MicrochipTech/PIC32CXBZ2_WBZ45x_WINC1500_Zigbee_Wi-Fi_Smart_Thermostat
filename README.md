@@ -20,7 +20,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 A Smart Thermostat is a device which can control the temperature and maintain a comfort environment by adjusting the heating or cooling system to a preferred set point. It consists of 3 modules: a thermostat sensor, thermostat panel and a thermostat gateway. A thermostat sensor is an end device which reports the current temperature to the devices in the ZigBee network and it can also be made as an battery operated device. The thermostat panel is an end device which acts as the remote control to set the temperature. It can also be a battery operated device and can be kept anywhere in the room i.e it is a mobile device. A thermostat gateway is a Zigbee coordinator which creates a centralized network to which all the end devices join and report the current and the set temperature. This data is used for HVAC control and the same is published onto MQTT using WINC1500 in the ZigBee Gateway.
 
-![](Docs/Thermostat.PNG)
+![](Docs/Thermostat.png)
 
 ## Description
 
