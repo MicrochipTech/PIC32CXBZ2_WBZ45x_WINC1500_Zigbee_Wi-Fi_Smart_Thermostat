@@ -119,7 +119,7 @@ Refer Project Manifest present in harmony-manifest-success.yml under the projec
 
 **Step 1** - Connect the WBZ451 CURIOSITY BOARD with Temp&Hum 13 click to the device/system using a micro-USB cable. \
 
-**Step 2** - Create a [new MCC Harmony project](https://github.com/MicrochipTech/EA71C53A/blob/master/H3/wireless_apps_pic32cxbz2_wbz45/apps/Docs/creating_new_mplabx_harmony_project.md#creating-a-new-mcc-harmony-project). \
+**Step 2** - Create a new MCC Harmony project. \
 
 **Step 3** - The "MCC - Harmony Project Graph" below depicts the harmony components utilized in this project. \
 
@@ -170,20 +170,20 @@ Refer Project Manifest present in harmony-manifest-success.yml under the projec
 
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
-| Path | The application folder can be foung in the following [link](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/tree/main/Thermostat_Zigbee_Gateway/WBZ451_WINC1500_THERMOSTAT_GATEWAY/firmware) |
+| Path | The application folder can be found in the following [link](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/tree/main/Thermostat_Zigbee_Gateway/firmware) |
 
-- Copy the "app_winc" folder, which can be found by navigating to the following [path](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/tree/main/Thermostat_Zigbee_Gateway/WBZ451_WINC1500_THERMOSTAT_GATEWAY/firmware).
+- Copy the "app_winc" folder, which can be found by navigating to the following [path](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/tree/main/Thermostat_Zigbee_Gateway/firmware).
 - Paste the folder under source files in your project folder (...\firmware\src).
 - Copy the "paho.mqtt.embedded-c" folder, which can be found by navigating to the following path: "...\firmware\src\third_party"
 - Paste the folder under the given path in your project folder (...\firmware\src\third_party).
 - Copy the "wdrv_winc_debug.h" file, which can be found by navigating to the following path: "...\firmware\src\config\default\driver\winc\include\"
-- Paste the file under the given path in your project folder (...\firmware\src\config\default\driver\winc\include\).
+- Replace the file under the given path in your project folder (...\firmware\src\config\default\driver\winc\include\).
 
 **Step 7** - Add the files in MPLAB X IDE to your project by following the steps mentioned below.
 
 - In Projects section, right click on Source files to add the ".c" file and Header files to add the ".h" file.
 - Select "Add existing items from folder".
-- Select Add and browse the location of "app_temphum13" folder (...\firmware\src). 
+- Select Add and browse the location of "app_winc" and "paho.mqtt.embedded-c" folder (...\firmware\src). 
 - Make sure the "Files of type" is "C Source files" while adding ".c" files and "Header files" while adding ".h" files.
 - Select the folder and click "add".
 
@@ -194,7 +194,9 @@ Refer Project Manifest present in harmony-manifest-success.yml under the projec
 - Copy the "app_timer.c" file by navigating to the following path: - "...\firmware\src\app_timer"
 - Paste the files under source files in your project folder (...\firmware\src\app_timer).
 
-**Step 9** - In "app_zigbee_handler.c" file, replace the following code lines as shown below.
+**Step 9** - Change the following Code as givien below.
+
+- In "app_zigbee_handler.c" file, replace the following code lines as shown below.
 
 ```
 case CMD_ZCL_REPORTING_TEMPERATURE_MEASUREMENT:
@@ -212,6 +214,21 @@ case CMD_ZCL_REPORTING_TEMPERATURE_MEASUREMENT:
 ```
 
 ![Zigbee handler](Docs/Zigbee_handler.PNG)
+
+- In your MPLAB Harmony v3 based application go to "firmware\src\config\default\peripheral\sercom\spi_master\plib_sercom1_spi_master.c" and do the following changes.
+  
+  - At Line 177 include the following code to setup the clock frequency.
+  
+```
+	if (setup->clockFrequency == 0)
+		{
+			baudValue = SERCOM1_SPIM_BAUD_VALUE;
+		}
+		else
+		{
+			baudValue = (spiSourceClock/(2U*(setup->clockFrequency))) - 1U;
+		}
+```	
 
 **Step 10** - Right click on your project in the Projects section in MPLAB and select Properties. Select "xc32-gcc" and in Option categories select "Preprocessing and messages" and click on the settings option as shown below.\
 ![Zigbee handler](Docs/Macro_def.PNG)
@@ -271,7 +288,7 @@ Follow the steps provided in the link to [program the precompiled hex file](http
 ### Build and program the application using MPLAB X IDE
 
 The application folder can be found by navigating to the following path: 
-- "PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/Thermostat_Zigbee_Gateway/"
+- "PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat/Thermostat_Zigbee_Gateway/firmware"
 
 Follow the steps provided in the link to [Build and program the application](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#build-and-program-the-application-guid-3d55fb8a-5995-439d-bcd6-deae7e8e78ad-section).
 

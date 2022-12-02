@@ -18,11 +18,11 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## Description
 
-"IoT Made Easy!" - Smart Thermostat solution using Zigbee 3.0 and Wi-Fi. The Smart Thermostat enables us to set the temperature using a Thermostat Panel, get the current temperature through Multisensor and switch on/off the air conditioner based on the current and set temperature and publish the same data onto MQTT through a Zigbee Gateway. This application enables us to create a Smart Thermostat.
+"IoT Made Easy!" - Smart Thermostat solution using Zigbee 3.0 and Wi-Fi. The Smart Thermostat enables us to set the temperature using a Thermostat Panel and get the current temperature through multisensor. Based on the current and set temperature the air conditioner is switched ON/OFF which is indicated by the RGB led in the Zigbee Gateway device. 
 
 ![Alt Text](Docs/Smart_Thermostat_Working.gif)
 
-The above video shows the working of the Smart thermostat application. The Smart Thermostat setup includes a Zigbee Gateway, Thermostat Panel and a Multisensor. The Gateway application is a Zigbee coordinator and establishes a centralized network. The Thermostat panel and Multisensor joins this centralized network. Once the network is formed the Multisensor reports the temperature values to the devices in the network and the set temperature is reported by the Thermostat Panel. Based on the current and set temperature the air conditioner is switched on/off which is indicated by the RGB led in the Zigbee Gateway device.
+The above video shows the working of the Smart thermostat application. The Smart Thermostat setup includes a Zigbee Gateway, Thermostat Panel and a Multisensor. The Gateway application is a Zigbee coordinator and establishes a centralized network. The Thermostat panel and Multisensor joins this centralized network. Once the network is formed the Multisensor reports the temperature values to the devices in the network and the set temperature is reported by the Thermostat Panel. When the current temperature is higher than the set temperature the air conditioner is switched ON and the RGB led in the Zigbee Gateway device is also switched ON and the vice versa.
 
 ## Contents
 

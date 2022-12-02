@@ -201,3 +201,4 @@ Follow the steps provided in the link to [Build and program the application](htt
 
 ![Alt Text](Docs/Touch_working.gif)
 
+<a href="#top">Back to top</a>
