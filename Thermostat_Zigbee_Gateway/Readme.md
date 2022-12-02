@@ -287,14 +287,14 @@ Follow the steps provided in the link to [Build and program the application](htt
 
 - Follow the steps mentioned below to see the data published in the MQTT.
 
-		- Open MQTT explorer and give the host name as "broker.hivemq.com". \
-		![](Docs/MQTT_1.png)
+	- Open MQTT explorer and give the host name as "broker.hivemq.com". \
+	![](Docs/MQTT_1.png)
 		
-		- Select Advanced and add a new topic as "MCHP/WSG/THERMOSTAT_GATEWAY". \
-		![](Docs/MQTT_2.png)
+	- Select Advanced and add a new topic as "MCHP/WSG/THERMOSTAT_GATEWAY". \
+	![](Docs/MQTT_2.png)
 		
-		- The data will be published onto MQTT as shown below. \
-		![](Docs/MQTT_3.png)
+	- The data will be published onto MQTT as shown below. \
+	![](Docs/MQTT_3.png)
 		
 - Press the switch Reset on the WBZ451 Curiosity Evaluation Kit to print the console logs.
 ![Console](Docs/Console.PNG)

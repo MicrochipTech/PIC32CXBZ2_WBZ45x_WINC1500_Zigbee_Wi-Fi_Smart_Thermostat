@@ -2,12 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/Smart_Thermostat_application/Thermostat_Zigbee_Panel/WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware/src/main.c</file>
-            <file>file:/D:/Smart_Thermostat_application/Thermostat_Zigbee_Panel/WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware/src/app.c</file>
-            <file>file:/D:/Smart_Thermostat_application/Thermostat_Zigbee_Panel/WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware/src/click_routines/oled_c/oled_c.c</file>
-            <file>file:/D:/Smart_Thermostat_application/Thermostat_Zigbee_Panel/WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware/src/config/default/zigbee/z3device/common/include/z3Device.h</file>
-            <file>file:/D:/Smart_Thermostat_application/Thermostat_Zigbee_Panel/WBZ451_ZIGBEE_THERMOSTAT_TOUCH_OLED/firmware/src/app_zigbee/zigbee_console/custom.c</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
