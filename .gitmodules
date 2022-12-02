@@ -1,0 +1,3 @@
+[submodule "Thermostat_Zigbee_Sensor"]
+	path = Thermostat_Zigbee_Sensor
+	url = https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_ZIGBEE_MULTISENSOR_TEMPHUM13_CLICK.git
