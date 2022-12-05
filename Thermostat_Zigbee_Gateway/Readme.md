@@ -217,7 +217,7 @@ case CMD_ZCL_REPORTING_TEMPERATURE_MEASUREMENT:
 
 - In your MPLAB Harmony v3 based application go to "firmware\src\config\default\peripheral\sercom\spi_master\plib_sercom1_spi_master.c" and do the following changes.
   
-  - At Line 177 include the following code to setup the clock frequency.
+  - At Line 177 replace the following code to setup the clock frequency.
   
 ```
 	if (setup->clockFrequency == 0)

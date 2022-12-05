@@ -263,7 +263,7 @@ void Zigbee_Event_Handler(APP_Zigbee_Event_t event)
 
         case EVENT_COMMISSIONING_COMPLETE:
         {
-            APP_TIMER_SetTimer(APP_TIMER_ID_0, APP_TIMER_30S, true);
+            APP_TIMER_SetTimer(APP_TIMER_ID_0, APP_TIMER_30S, false);
             appSnprintf("Commissioning Procedure Complete \r\n");
         }
         break;
