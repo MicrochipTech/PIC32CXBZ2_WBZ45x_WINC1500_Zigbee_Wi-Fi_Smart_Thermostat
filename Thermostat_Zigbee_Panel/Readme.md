@@ -123,6 +123,7 @@ This example application demonstrates the use of the OLED C CLICK and an externa
 - This aplication can also be created using Combined Interface but since we are using a battery operated device we use a Custom device. Select the Combined Interface component in the Project graph and click ❌ to remove it.
 
 - From Device resources, go to wireless->drivers->zigbee->Device types and select CUSTOM device. Accept Dependencies or satisfiers, select "Yes". Add UART components needed for console logs and commands. Right click on the "⬦" in Zigbee console to add the satisfier and make the configurations as shown below. 
+
 ![CUSTOM](Docs/Custom.PNG)
 
 ![CUSTOM](Docs/Custom_config1.PNG)
@@ -130,17 +131,21 @@ This example application demonstrates the use of the OLED C CLICK and an externa
 ![CUSTOM](Docs/Custom_config2.PNG)
 
 - From Device resources, go to System services and select console. Right click on the "⬦" on the instance0 and select SERCOM2 to create a UART communication with the touch interface and the configurations are shown below.
+
 ![SERCOM2](Docs/SERCOM2.PNG)
 
 - From Device resources, go to Wireless->System services and select "APP_TIMER_SERVICE".
 
 - The SYSTEM configuration is depicted as follows.
+
 ![System DEVCFG1](Docs/System_configuration.PNG)
 
 - From project graph, go to Plugins->PIN configuration and configure as follows.
+
 ![PIN Configuration](Docs/Pin_Configuration.PNG)
 
 - The project graph after making the changes is shown below.
+
 ![](Docs/2_project_graph.PNG)
 
 **Step 4** - [Generate](https://onlineDocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.

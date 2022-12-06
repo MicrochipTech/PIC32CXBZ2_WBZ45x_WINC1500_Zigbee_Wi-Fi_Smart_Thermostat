@@ -126,38 +126,49 @@ Refer Project Manifest present in harmony-manifest-success.yml under the projec
 ![Harmony Project Graph](Docs/Project_graph.PNG)
 
 - From Device resources, go to Harmony->Wireless->Drivers and select WINC. Accept Dependencies or satisfiers, select "Yes". Right click on the "⬦" in WINC device and add SPI driver. And in the same way add SERCOM1 to the SPI driver as shown below.
+
 ![WINC](Docs/Winc_connection.png)
 
 - The EIC configuration is depicted as follows.
+
 ![EIC](Docs/EIC.PNG)
 
 - The WINC configuration is depicted as follows.
+
 ![WINC](Docs/Winc.PNG)
 
 - The SPI driver configuration is depicted as follows.
+
 ![SPI DRIVER](Docs/SPI_DRIVER.PNG)
 
 - The SERCOM1 SPI configuration is depicted as follows.
+
 ![SERCOM1 SPI](Docs/Sercom1_configuration.PNG)
 
 - Right click on the "⬦" in Time system service and select TC3 as shown below.
+
 ![Timer](Docs/Timer.PNG)
 
 - From Device resources, go to wireless->drivers->zigbee->Device types and select THERMOSTAT. Accept Dependencies or satisfiers, select "Yes". Add UART components needed for console logs and commands. Right click on the "⬦" in Zigbee console and add the satisfier and in the same way add SERCOM0 to the USART console as shown below.
+
 ![Thermostat](Docs/Thermostat.PNG)
 
 - The SERCOM0 UART configuration is depicted as follows.
+
 ![SERCOM0 USART](Docs/Sercom0_configuration.PNG)
 
 - Select Wolfcrypt library and make sure that "Support random number generation" box is unchecked as shown below.
+
 ![Wolfcrypt library](Docs/Wolfcrypt_library.PNG)
 
 - From Device resources, go to Harmony->Wireless->System Services and select "APP_TIMER_SERVICE".
 
 - The SYSTEM configuration is depicted as follows.
+
 ![System DEVCFG1](Docs/System_configuration.PNG)
 
 - From project graph, go to Plugins->PIN configuration and configure as follows.
+
 ![PIN Configuration](Docs/Pin_config.PNG)
 
 **Step 4** - [Generate](https://onlineDocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.
@@ -314,6 +325,7 @@ Follow the steps provided in the link to [Build and program the application](htt
 	![](Docs/MQTT_3.png)
 		
 - Press the switch Reset on the WBZ451 Curiosity Evaluation Kit to print the console logs.
+
 ![Console](Docs/Console.PNG)
 
 <a href="#top">Back to top</a>
