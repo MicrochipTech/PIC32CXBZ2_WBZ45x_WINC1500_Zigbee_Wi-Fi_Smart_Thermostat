@@ -156,7 +156,7 @@ This example application demonstrates the use of the OLED C CLICK and an externa
 
 - "#error User action required - manually edit files as described here".
 
-**Step 8** - Replace the app.c, app_zigbee_handler.c and app.h file.
+**Step 8** - Replace the app.c, app_zigbee_handler.c, app_timer.c, z3device.h and app.h file.
 
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
@@ -168,10 +168,12 @@ This example application demonstrates the use of the OLED C CLICK and an externa
 	- "../firmware/src/app_zigbee"
 	- "../firmware/src/app_timer"
 - Paste the files under the respecive folders in your project folder .
+- Copy the "z3Device.h" file by navigating to the following path: "..\firmware\src\config\default\zigbee\z3device\common\include\"
+- Paste the files under source files in your project folder (..\firmware\src\config\default\zigbee\z3device\common\include\).
 
 **Step 9** - Clean and build the project. To run the project, select "Make and program device" button.
 
-**Step 10** - The OLED display & data are printed onto the tera term.
+**Step 10** - The data is printed onto the tera term and the OLED display.
 
 - Baud rate: 115200
 - Com port: COM USB serial port
