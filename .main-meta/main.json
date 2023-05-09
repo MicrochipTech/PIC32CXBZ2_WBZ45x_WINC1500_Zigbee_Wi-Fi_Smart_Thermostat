@@ -41,7 +41,7 @@
             "SERCOM"
         ],
         "keywords": [
-             "IoT","MPLAB X","Display","SPI","OLED","XC32","Zigbee","Capacitive Touch","SERCOM","MCC","Wireless","Development Tool","Temperature","I2C","Edge Node","High Performance"
+             "IoT","MPLAB X","Display","SPI","OLED","XC32","Zigbee","WiFi","Intelligent Gateway","Capacitive Touch","SERCOM","MCC","Wireless","Development Tool","Temperature","I2C","Edge Node","High Performance"
         ],
         "additionalData": {
             "longDescription": {
