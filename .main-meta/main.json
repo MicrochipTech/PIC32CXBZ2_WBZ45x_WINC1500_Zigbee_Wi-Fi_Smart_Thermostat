@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mplabx.project.PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat",
-        "version": "1.0.1",
-        "displayName": "PIC32CXBZ2 WBZ45x SMART INDUSTRIAL THERMOSTAT",
+        "version": "1.0.0",
+        "displayName": "PIC32CXBZ2_WBZ45x SMART INDUSTRIAL THERMOSTAT",
         "projectName": "PIC32CXBZ2_WBZ45x_WINC1500_Zigbee_Wi-Fi_Smart_Thermostat",
         "shortDescription": "Smart Thermostat solution using Zigbee 3.0 and Wi-Fi. The Smart Thermostat enables us to set the temperature using a Thermostat Panel, get the current temperature through Multisensor and switch on/off the air conditioner based on the current and set temperature and publish the same data onto MQTT through a Zigbee Gateway.",
         "ide": {
