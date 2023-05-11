@@ -2,7 +2,7 @@
 <img src="Docs/IoT-Made-Easy-Logo.png" width=100>
 
 
-> "IOT Made Easy!"
+> "IoT Made Easy!"
 Devices: **| PIC32CXBZ2 | WBZ45x |**<br>
 Features: **| ZIGBEE | Wi-Fi |**
 
